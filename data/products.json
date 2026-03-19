@@ -1,0 +1,40 @@
+[
+  {
+    "id": "iphone-13-001",
+    "slug": "iphone-13-128-midnight",
+    "name": "iPhone 13 128GB Midnight",
+    "category": "iphone",
+    "price": 42990,
+    "images": ["/placeholder-product.jpg"],
+    "isVisible": true,
+    "brand": "Apple",
+    "model": "iPhone 13",
+    "description": "Б/у iPhone 13 в хорошем состоянии.",
+    "condition": "good",
+    "storage": "128GB",
+    "color": "Midnight",
+    "isFeatured": true,
+    "status": "available",
+    "createdAt": "2026-03-19T00:00:00.000Z",
+    "updatedAt": "2026-03-19T00:00:00.000Z"
+  },
+  {
+    "id": "macbook-air-m1-001",
+    "slug": "macbook-air-m1-8-256-space-gray",
+    "name": "MacBook Air M1 8/256 Space Gray",
+    "category": "macbook",
+    "price": 64990,
+    "images": ["/placeholder-product.jpg"],
+    "isVisible": true,
+    "brand": "Apple",
+    "model": "MacBook Air M1",
+    "description": "Б/у MacBook Air M1 в отличном состоянии.",
+    "condition": "excellent",
+    "storage": "256GB",
+    "color": "Space Gray",
+    "isFeatured": true,
+    "status": "available",
+    "createdAt": "2026-03-19T00:00:00.000Z",
+    "updatedAt": "2026-03-19T00:00:00.000Z"
+  }
+]
