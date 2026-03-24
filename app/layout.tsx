@@ -18,10 +18,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
-      <body className={inter.className}>
-        <SiteHeader />
-        {children}
+    <html lang="ru" className="h-full">
+      <body
+        className={`${inter.className} min-h-full bg-background text-foreground antialiased`}
+      >
+        <div className="flex min-h-screen flex-col">
+          <SiteHeader />
+
+          <main className="flex-1">
+            <div className="page-shell">{children}</div>
+          </main>
+        </div>
       </body>
     </html>
   );
