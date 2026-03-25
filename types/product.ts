@@ -9,18 +9,30 @@ export type ProductCategory =
   | "airpods"
   | "accessories";
 
+export type ProductSpecification = {
+  label: string;
+  value: string;
+};
+
 export type Product = {
   id: string;
   slug: string;
   name: string;
   category: ProductCategory;
   price: number;
+
+  // legacy compatibility field on transition stage
   images: string[];
+
+  mainImage: string;
+  galleryImages: string[];
+  specifications: ProductSpecification[];
+  description: string;
+
   isVisible: boolean;
 
   brand?: string;
   model?: string;
-  description?: string;
   condition?: string;
   storage?: string;
   color?: string;
