@@ -12,7 +12,7 @@ const categoryLabels: Record<string, string> = {
   iphone: "iPhone",
   macbook: "MacBook",
   ipad: "iPad",
-  watch: "Apple Watch",
+  "apple-watch": "Apple Watch",
   airpods: "AirPods",
   imac: "iMac",
 };
@@ -189,51 +189,67 @@ export default function Home() {
               return (
                 <article
                   key={product.id}
-                  className="group flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                  className="group flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
                 >
-                  <div className="inline-flex w-fit rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-600">
-                    {categoryLabel}
-                  </div>
-
-                  <h3 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950">
-                    {product.name}
-                  </h3>
-
-                  <p className="mt-3 text-base leading-7 text-slate-600">
-                    {product.description}
-                  </p>
-
-                  <div className="mt-6 text-3xl font-semibold tracking-tight text-slate-950">
-                    {product.price.toLocaleString("ru-RU")} ₽
-                  </div>
-
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {product.storage && (
-                      <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                        Память: {product.storage}
-                      </span>
-                    )}
-
-                    {product.color && (
-                      <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                        Цвет: {product.color}
-                      </span>
-                    )}
-
-                    {conditionLabel && (
-                      <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                        Состояние: {conditionLabel}
-                      </span>
+                  <div className="aspect-[4/3] border-b border-slate-200 bg-slate-50">
+                    {product.mainImage ? (
+                      <img
+                        src={product.mainImage}
+                        alt={product.name}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-full items-center justify-center px-6 text-center text-sm text-slate-500">
+                        Фото товара пока не добавлено
+                      </div>
                     )}
                   </div>
 
-                  <div className="mt-6 pt-2">
-                    <Link
-                      href="/catalog"
-                      className="inline-flex items-center text-sm font-medium text-slate-900 transition group-hover:text-slate-700"
-                    >
-                      Перейти к выбору в каталоге
-                    </Link>
+                  <div className="flex h-full flex-col p-6">
+                    <div className="inline-flex w-fit rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-600">
+                      {categoryLabel}
+                    </div>
+
+                    <h3 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950">
+                      {product.name}
+                    </h3>
+
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {product.description}
+                    </p>
+
+                    <div className="mt-6 text-3xl font-semibold tracking-tight text-slate-950">
+                      {product.price.toLocaleString("ru-RU")} ₽
+                    </div>
+
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {product.storage && (
+                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
+                          Память: {product.storage}
+                        </span>
+                      )}
+
+                      {product.color && (
+                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
+                          Цвет: {product.color}
+                        </span>
+                      )}
+
+                      {conditionLabel && (
+                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
+                          Состояние: {conditionLabel}
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="mt-6 pt-2">
+                      <Link
+                        href={`/catalog/${product.slug}`}
+                        className="inline-flex items-center text-sm font-medium text-slate-900 transition group-hover:text-slate-700"
+                      >
+                        Перейти к выбору в каталоге
+                      </Link>
+                    </div>
                   </div>
                 </article>
               );
@@ -264,57 +280,6 @@ export default function Home() {
             </div>
           </div>
         )}
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 pb-20 lg:px-8">
-        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <div className="max-w-2xl">
-            <div className="text-sm font-medium uppercase tracking-[0.12em] text-slate-500">
-              Почему нам доверяют
-            </div>
-
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-              Понятный сценарий покупки без перегруженного интерфейса
-            </h2>
-
-            <p className="mt-3 text-base leading-7 text-slate-600">
-              Главная задача публичной части — не просто показать устройства, а
-              помочь быстро сориентироваться, вызвать доверие и подвести к
-              следующему шагу.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            <div className="rounded-2xl bg-slate-50 p-5">
-              <div className="text-base font-medium text-slate-950">
-                Понятная структура
-              </div>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Главная, каталог, доставка, оплата и trade-in читаются как одна
-                цельная система.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-slate-50 p-5">
-              <div className="text-base font-medium text-slate-950">
-                Акцент на доверие
-              </div>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Важные вопросы пользователя закрываются до контакта с менеджером.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-slate-50 p-5">
-              <div className="text-base font-medium text-slate-950">
-                Коммерческий фокус
-              </div>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Страница ведет либо в каталог, либо в trade-in, а не просто
-                показывает текст.
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
     </>
   );

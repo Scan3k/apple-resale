@@ -5,7 +5,7 @@ const categoryLabels: Record<string, string> = {
   iphone: "iPhone",
   macbook: "MacBook",
   ipad: "iPad",
-  watch: "Apple Watch",
+  "apple-watch": "Apple Watch",
   airpods: "AirPods",
   imac: "iMac",
 };
@@ -75,60 +75,76 @@ export default function CatalogPage() {
               return (
                 <article
                   key={product.id}
-                  className="group flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                  className="group flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
                 >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="inline-flex rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-600">
-                      {categoryLabel}
-                    </div>
+                  <div className="aspect-[4/3] border-b border-slate-200 bg-slate-50">
+                    {product.mainImage ? (
+                      <img
+                        src={product.mainImage}
+                        alt={product.name}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-full items-center justify-center px-6 text-center text-sm text-slate-500">
+                        Фото товара пока не добавлено
+                      </div>
+                    )}
+                  </div>
 
-                    <div className="text-right">
-                      <div className="text-2xl font-semibold tracking-tight text-slate-950">
-                        {product.price.toLocaleString("ru-RU")} ₽
+                  <div className="flex h-full flex-col p-6">
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="inline-flex rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-600">
+                        {categoryLabel}
+                      </div>
+
+                      <div className="text-right">
+                        <div className="text-2xl font-semibold tracking-tight text-slate-950">
+                          {product.price.toLocaleString("ru-RU")} ₽
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <h2 className="mt-5 text-2xl font-semibold tracking-tight text-slate-950">
-                    <Link
-                      href={`/catalog/${product.slug}`}
-                      className="transition group-hover:text-slate-700"
-                    >
-                      {product.name}
-                    </Link>
-                  </h2>
+                    <h2 className="mt-5 text-2xl font-semibold tracking-tight text-slate-950">
+                      <Link
+                        href={`/catalog/${product.slug}`}
+                        className="transition group-hover:text-slate-700"
+                      >
+                        {product.name}
+                      </Link>
+                    </h2>
 
-                  <p className="mt-3 text-base leading-7 text-slate-600">
-                    {product.description}
-                  </p>
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {product.description}
+                    </p>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {product.storage && (
-                      <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                        Память: {product.storage}
-                      </span>
-                    )}
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {product.storage && (
+                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
+                          Память: {product.storage}
+                        </span>
+                      )}
 
-                    {product.color && (
-                      <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                        Цвет: {product.color}
-                      </span>
-                    )}
+                      {product.color && (
+                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
+                          Цвет: {product.color}
+                        </span>
+                      )}
 
-                    {conditionLabel && (
-                      <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                        Состояние: {conditionLabel}
-                      </span>
-                    )}
-                  </div>
+                      {conditionLabel && (
+                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
+                          Состояние: {conditionLabel}
+                        </span>
+                      )}
+                    </div>
 
-                  <div className="mt-auto pt-8">
-                    <Link
-                      href={`/catalog/${product.slug}`}
-                      className="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-5 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
-                    >
-                      Открыть товар
-                    </Link>
+                    <div className="mt-auto pt-8">
+                      <Link
+                        href={`/catalog/${product.slug}`}
+                        className="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-5 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
+                      >
+                        Открыть товар
+                      </Link>
+                    </div>
                   </div>
                 </article>
               );

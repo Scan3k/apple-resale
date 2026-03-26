@@ -5,21 +5,26 @@
     "name": "iPhone 13 128GB Midnight",
     "category": "iphone",
     "price": 42990,
-    "images": ["/placeholder-product.jpg"],
-    "mainImage": "",
-    "galleryImages": [],
+    "images": [
+      "https://60.img.avito.st/image/1/1.I4knJ7a4j2ARjk1lbX8l5S-FjWaZhg1oUYONYpeOh2qR.N_47z04HeMnU02vT1dXNhEAmW9DNhMz8BqS5GTQNZ3s",
+      "https://20.img.avito.st/image/1/1.dPEmHLa42BgQtRodQnUyvxS82h6YvVoQULjaGpa10BKQ.C8-iCynbmWmK64chZpqgBLPgPdfDenprafFMpVdgTEs?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ"
+    ],
+    "mainImage": "https://60.img.avito.st/image/1/1.I4knJ7a4j2ARjk1lbX8l5S-FjWaZhg1oUYONYpeOh2qR.N_47z04HeMnU02vT1dXNhEAmW9DNhMz8BqS5GTQNZ3s",
+    "galleryImages": [
+      "https://20.img.avito.st/image/1/1.dPEmHLa42BgQtRodQnUyvxS82h6YvVoQULjaGpa10BKQ.C8-iCynbmWmK64chZpqgBLPgPdfDenprafFMpVdgTEs?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ"
+    ],
     "specifications": [],
+    "description": "Б/у iPhone 13 в хорошем состоянии. \nРhоnе б/у\n• 100% оригинальный, не восстановленный!\n• Собрана история об устройстве\n• Гарантия возврата или обмена устройства\n• Стоимость актуальна за наличный расчет",
     "isVisible": true,
     "brand": "Apple",
     "model": "iPhone 13",
-    "description": "Б/у iPhone 13 в хорошем состоянии.",
     "condition": "good",
     "storage": "128GB",
     "color": "Midnight",
     "isFeatured": true,
     "status": "available",
     "createdAt": "2026-03-19T00:00:00.000Z",
-    "updatedAt": "2026-03-19T00:00:00.000Z"
+    "updatedAt": "2026-03-26T11:46:06.335Z"
   },
   {
     "id": "macbook-air-m1-001",
@@ -27,7 +32,9 @@
     "name": "MacBook Air M1 8/256 Space Gray",
     "category": "macbook",
     "price": 64990,
-    "images": ["/placeholder-product.jpg"],
+    "images": [
+      "/placeholder-product.jpg"
+    ],
     "mainImage": "",
     "galleryImages": [],
     "specifications": [],
@@ -42,5 +49,33 @@
     "status": "available",
     "createdAt": "2026-03-19T00:00:00.000Z",
     "updatedAt": "2026-03-19T00:00:00.000Z"
+  },
+  {
+    "id": "macbook-566a08d0",
+    "slug": "Macbook-air-13-2020-m1",
+    "name": "MacBook Air 13 M1 2020 8/256",
+    "category": "macbook",
+    "price": 35600,
+    "images": [
+      "uhf",
+      "weiufhgwiu"
+    ],
+    "mainImage": "uhf",
+    "galleryImages": [
+      "weiufhgwiu"
+    ],
+    "specifications": [],
+    "description": "",
+    "isVisible": true,
+    "brand": "Apple",
+    "model": "MacBook Air 13 2020",
+    "condition": "good",
+    "storage": "256",
+    "color": "space gray",
+    "oldPrice": 40000,
+    "isFeatured": false,
+    "status": "available",
+    "createdAt": "2026-03-26T10:17:17.566Z",
+    "updatedAt": "2026-03-26T10:18:13.018Z"
   }
 ]

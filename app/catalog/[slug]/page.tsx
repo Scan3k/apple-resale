@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getProductBySlug } from "@/lib/products";
 import { notFound } from "next/navigation";
 
+import ProductImageGallery from "@/components/product-image-gallery";
+
 type ProductPageProps = {
   params: Promise<{
     slug: string;
@@ -12,7 +14,7 @@ const categoryLabels: Record<string, string> = {
   iphone: "iPhone",
   macbook: "MacBook",
   ipad: "iPad",
-  watch: "Apple Watch",
+  "apple-watch": "Apple Watch",
   airpods: "AirPods",
   imac: "iMac",
 };
@@ -28,7 +30,6 @@ const statusLabels: Record<string, string> = {
   available: "В наличии",
   reserved: "Зарезервирован",
   sold: "Продан",
-  hidden: "Скрыт",
 };
 
 export default async function ProductPage({ params }: ProductPageProps) {
@@ -39,9 +40,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     notFound();
   }
 
-  const categoryLabel = product.category
-    ? categoryLabels[product.category] ?? product.category
-    : "Apple";
+  const categoryLabel = categoryLabels[product.category] ?? product.category;
 
   const conditionLabel = product.condition
     ? conditionLabels[product.condition] ?? product.condition
@@ -51,13 +50,25 @@ export default async function ProductPage({ params }: ProductPageProps) {
     ? statusLabels[product.status] ?? product.status
     : null;
 
-  const specs = [
+  const galleryImages = [product.mainImage, ...product.galleryImages].filter(
+    (image, index, images) => Boolean(image) && images.indexOf(image) === index
+  );
+
+  const fallbackSpecs = [
     product.model ? { label: "Модель", value: product.model } : null,
     product.storage ? { label: "Память", value: product.storage } : null,
     product.color ? { label: "Цвет", value: product.color } : null,
     conditionLabel ? { label: "Состояние", value: conditionLabel } : null,
     statusLabel ? { label: "Статус", value: statusLabel } : null,
   ].filter(Boolean) as { label: string; value: string }[];
+
+  const specifications =
+    product.specifications.length > 0 ? product.specifications : fallbackSpecs;
+
+  const descriptionParagraphs = product.description
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
 
   return (
     <>
@@ -73,7 +84,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_380px] lg:items-start">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-            <div className="inline-flex rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-600">
+            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50">
+              <ProductImageGallery
+                images={galleryImages}
+                productName={product.name}
+              />
+            </div>
+
+            <div className="mt-6 inline-flex rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-600">
               {categoryLabel}
             </div>
 
@@ -81,9 +99,18 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {product.name}
             </h1>
 
-            <p className="mt-5 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-              {product.description}
-            </p>
+            <div className="mt-5 max-w-3xl space-y-4 text-base leading-8 text-slate-600 sm:text-lg">
+              {descriptionParagraphs.length > 0 ? (
+                descriptionParagraphs.map((paragraph, index) => (
+                  <p key={`${product.id}-paragraph-${index}`}>{paragraph}</p>
+                ))
+              ) : (
+                <p>
+                  Подробное описание пока не заполнено. Основную информацию по
+                  устройству можно посмотреть ниже или уточнить перед покупкой.
+                </p>
+              )}
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-2">
               {product.storage && (
@@ -116,11 +143,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 Что важно по устройству
               </div>
 
-              {specs.length > 0 ? (
+              {specifications.length > 0 ? (
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                  {specs.map((spec) => (
+                  {specifications.map((spec, index) => (
                     <div
-                      key={spec.label}
+                      key={`${spec.label}-${index}`}
                       className="rounded-2xl border border-slate-200 bg-white p-4"
                     >
                       <div className="text-sm text-slate-500">{spec.label}</div>
