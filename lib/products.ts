@@ -1,5 +1,9 @@
-import rawProducts from "@/data/products.json";
+import { readFileSync } from "node:fs";
+import path from "node:path";
+
 import type { Product, ProductSpecification } from "@/types/product";
+
+const PRODUCTS_FILE_PATH = path.join(process.cwd(), "data", "products.json");
 
 type RawProduct = Omit<
   Product,
@@ -82,22 +86,31 @@ function normalizeProduct(product: RawProduct): Product {
   };
 }
 
-const products: Product[] = (rawProducts as RawProduct[]).map(normalizeProduct);
+function readProductsFile(): Product[] {
+  const fileContent = readFileSync(PRODUCTS_FILE_PATH, "utf8");
+  const parsed: unknown = JSON.parse(fileContent);
+
+  if (!Array.isArray(parsed)) {
+    return [];
+  }
+
+  return (parsed as RawProduct[]).map(normalizeProduct);
+}
 
 export function getAllProducts(): Product[] {
-  return products;
+  return readProductsFile();
 }
 
 export function getVisibleProducts(): Product[] {
-  return products.filter((product) => product.isVisible);
+  return readProductsFile().filter((product) => product.isVisible);
 }
 
 export function getFeaturedProducts(): Product[] {
-  return products.filter(
+  return readProductsFile().filter(
     (product) => product.isVisible && product.isFeatured
   );
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find((product) => product.slug === slug);
+  return readProductsFile().find((product) => product.slug === slug);
 }
