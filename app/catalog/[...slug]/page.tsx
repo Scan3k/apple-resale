@@ -4,9 +4,11 @@ import { notFound } from "next/navigation";
 
 import ProductImageGallery from "@/components/product-image-gallery";
 
+export const dynamic = "force-dynamic";
+
 type ProductPageProps = {
   params: Promise<{
-    slug: string;
+    slug: string[];
   }>;
 };
 
@@ -34,7 +36,9 @@ const statusLabels: Record<string, string> = {
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const slugPath = slug.join("/");
+  const decodedSlug = slug.map((segment) => decodeURIComponent(segment)).join("/");
+  const product = getProductBySlug(decodedSlug) ?? getProductBySlug(slugPath);
 
   if (!product || !product.isVisible) {
     notFound();
@@ -84,14 +88,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_380px] lg:items-start">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50">
-              <ProductImageGallery
-                images={galleryImages}
-                productName={product.name}
-              />
-            </div>
-
-            <div className="mt-6 inline-flex rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-600">
+            <div className="inline-flex rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-600">
               {categoryLabel}
             </div>
 
@@ -99,17 +96,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {product.name}
             </h1>
 
-            <div className="mt-5 max-w-3xl space-y-4 text-base leading-8 text-slate-600 sm:text-lg">
-              {descriptionParagraphs.length > 0 ? (
-                descriptionParagraphs.map((paragraph, index) => (
-                  <p key={`${product.id}-paragraph-${index}`}>{paragraph}</p>
-                ))
-              ) : (
-                <p>
-                  Подробное описание пока не заполнено. Основную информацию по
-                  устройству можно посмотреть ниже или уточнить перед покупкой.
-                </p>
-              )}
+            <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-slate-50">
+              <ProductImageGallery
+                images={galleryImages}
+                productName={product.name}
+              />
             </div>
 
             <div className="mt-8 flex flex-wrap gap-2">
@@ -161,6 +152,19 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <p className="mt-4 text-sm leading-6 text-slate-600">
                   Основные характеристики будут уточняться в описании и при
                   консультации.
+                </p>
+              )}
+            </div>
+
+            <div className="mt-10 max-w-3xl space-y-4 text-base leading-8 text-slate-600 sm:text-lg">
+              {descriptionParagraphs.length > 0 ? (
+                descriptionParagraphs.map((paragraph, index) => (
+                  <p key={`${product.id}-paragraph-${index}`}>{paragraph}</p>
+                ))
+              ) : (
+                <p>
+                  Подробное описание пока не заполнено. Основную информацию по
+                  устройству можно посмотреть выше или уточнить перед покупкой.
                 </p>
               )}
             </div>

@@ -10,13 +10,6 @@ const categoryLabels: Record<string, string> = {
   imac: "iMac",
 };
 
-const conditionLabels: Record<string, string> = {
-  excellent: "Отличное",
-  good: "Хорошее",
-  fair: "Хорошее",
-  new: "Как новое",
-};
-
 export default function CatalogPage() {
   const products = getVisibleProducts();
 
@@ -68,10 +61,6 @@ export default function CatalogPage() {
                 ? categoryLabels[product.category] ?? product.category
                 : "Apple";
 
-              const conditionLabel = product.condition
-                ? conditionLabels[product.condition] ?? product.condition
-                : null;
-
               return (
                 <article
                   key={product.id}
@@ -106,40 +95,16 @@ export default function CatalogPage() {
 
                     <h2 className="mt-5 text-2xl font-semibold tracking-tight text-slate-950">
                       <Link
-                        href={`/catalog/${product.slug}`}
+                        href={`/catalog/${encodeURIComponent(product.slug)}`}
                         className="transition group-hover:text-slate-700"
                       >
                         {product.name}
                       </Link>
                     </h2>
 
-                    <p className="mt-3 text-base leading-7 text-slate-600">
-                      {product.description}
-                    </p>
-
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {product.storage && (
-                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                          Память: {product.storage}
-                        </span>
-                      )}
-
-                      {product.color && (
-                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                          Цвет: {product.color}
-                        </span>
-                      )}
-
-                      {conditionLabel && (
-                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                          Состояние: {conditionLabel}
-                        </span>
-                      )}
-                    </div>
-
                     <div className="mt-auto pt-8">
                       <Link
-                        href={`/catalog/${product.slug}`}
+                        href={`/catalog/${encodeURIComponent(product.slug)}`}
                         className="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-5 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
                       >
                         Открыть товар

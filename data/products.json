@@ -1,81 +1,232 @@
 [
   {
-    "id": "iphone-13-001",
-    "slug": "iphone-13-128-midnight",
-    "name": "iPhone 13 128GB Midnight",
-    "category": "iphone",
-    "price": 42990,
+    "id": "imac-e715a0a3",
+    "slug": "iMac-27-2020-i5-8/256gb",
+    "name": "iMac 27 2020 i5 8gb/256gb SSD",
+    "category": "imac",
+    "price": 70000,
     "images": [
-      "https://60.img.avito.st/image/1/1.I4knJ7a4j2ARjk1lbX8l5S-FjWaZhg1oUYONYpeOh2qR.N_47z04HeMnU02vT1dXNhEAmW9DNhMz8BqS5GTQNZ3s",
-      "https://20.img.avito.st/image/1/1.dPEmHLa42BgQtRodQnUyvxS82h6YvVoQULjaGpa10BKQ.C8-iCynbmWmK64chZpqgBLPgPdfDenprafFMpVdgTEs?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ"
+      "https://30.img.avito.st/image/1/1.ttrP0ra4GjP5e9g2r8Ca6YNzGDVxc5g7uXYYMX97Ejl5.38ousVCQEgwSXuZSL13adBPjiAH412YUTXD0eyOcbLg?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://60.img.avito.st/image/1/1.yVADu7a4Zbk1Eqe8HcSVY08aZ7-9GuexdR9nu7MSbbO1.YwCEq1fbDXrfb4pB7SkT2ZkAW8FnWLgqNKOGbpTmX80",
+      "https://10.img.avito.st/image/1/1.VVNPKLa4-bp5gTu_aQEKYAOJ-7zxiXuyOYz7uP-B8bD5.kIZarfmGq4vuEl390OtjoAfAQ2l4K4mdT1F3xPQ0814?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://10.img.avito.st/image/1/1.m8B75ba4NylNTPUsQZuP8TdENS_FRLUhDUE1K8tMPyPN.QE1mpWcC7BKP3A801WjTxCnVdcfm_we0oAfvQnEtd6g?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://40.img.avito.st/image/1/1.NDRWZra4mN1gz1rYMlJsBxrHmtvoxxrVIMKa3-bPkNfg.RezHM_zdXFz7UVJaMhqbpBuPIUs1eYOg2B7FVdKXptA"
     ],
-    "mainImage": "https://60.img.avito.st/image/1/1.I4knJ7a4j2ARjk1lbX8l5S-FjWaZhg1oUYONYpeOh2qR.N_47z04HeMnU02vT1dXNhEAmW9DNhMz8BqS5GTQNZ3s",
+    "mainImage": "https://30.img.avito.st/image/1/1.ttrP0ra4GjP5e9g2r8Ca6YNzGDVxc5g7uXYYMX97Ejl5.38ousVCQEgwSXuZSL13adBPjiAH412YUTXD0eyOcbLg?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
     "galleryImages": [
-      "https://20.img.avito.st/image/1/1.dPEmHLa42BgQtRodQnUyvxS82h6YvVoQULjaGpa10BKQ.C8-iCynbmWmK64chZpqgBLPgPdfDenprafFMpVdgTEs?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ"
+      "https://60.img.avito.st/image/1/1.yVADu7a4Zbk1Eqe8HcSVY08aZ7-9GuexdR9nu7MSbbO1.YwCEq1fbDXrfb4pB7SkT2ZkAW8FnWLgqNKOGbpTmX80",
+      "https://10.img.avito.st/image/1/1.VVNPKLa4-bp5gTu_aQEKYAOJ-7zxiXuyOYz7uP-B8bD5.kIZarfmGq4vuEl390OtjoAfAQ2l4K4mdT1F3xPQ0814?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://10.img.avito.st/image/1/1.m8B75ba4NylNTPUsQZuP8TdENS_FRLUhDUE1K8tMPyPN.QE1mpWcC7BKP3A801WjTxCnVdcfm_we0oAfvQnEtd6g?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://40.img.avito.st/image/1/1.NDRWZra4mN1gz1rYMlJsBxrHmtvoxxrVIMKa3-bPkNfg.RezHM_zdXFz7UVJaMhqbpBuPIUs1eYOg2B7FVdKXptA"
     ],
-    "specifications": [],
-    "description": "Б/у iPhone 13 в хорошем состоянии. \nРhоnе б/у\n• 100% оригинальный, не восстановленный!\n• Собрана история об устройстве\n• Гарантия возврата или обмена устройства\n• Стоимость актуальна за наличный расчет",
+    "specifications": [
+      {
+        "label": "Процессор",
+        "value": "(6 ядep) Intеl i5 3.1 GНz ( Тurbo Boost дo 4.5 GHz)"
+      },
+      {
+        "label": "Оперативная память",
+        "value": "8 gb DDR4 2667 MНz(мoжнo pacшиpить до 128 гб)"
+      },
+      {
+        "label": "Флэш-накопитель",
+        "value": "256gb(SSD PCI-e)"
+      },
+      {
+        "label": "Bидeокaрта",
+        "value": "AМD Rаdеon Prо 5300 4 gb"
+      }
+    ],
+    "description": "Aймак в отличном cостoянии, бeз cколов. Haрaбoтка небoльшая. В кoмплeктe magic mouse & keybоard 2\n\nРaбoтает как положено, нареканий нет. Экран без пыли. В ремонте не был. От всех учетных записей отвязан. От себя две недели гарантии на проверку.\n\nПри покупке можно проверить у меня в офисе. По Москве есть своя доставка, с оплатой после проверки.\n\nТорга нет. Возможен обмен на технику Аррlе с доплатой в обе стороны.",
     "isVisible": true,
     "brand": "Apple",
-    "model": "iPhone 13",
-    "condition": "good",
-    "storage": "128GB",
-    "color": "Midnight",
-    "isFeatured": true,
-    "status": "available",
-    "createdAt": "2026-03-19T00:00:00.000Z",
-    "updatedAt": "2026-03-26T11:46:06.335Z"
-  },
-  {
-    "id": "macbook-air-m1-001",
-    "slug": "macbook-air-m1-8-256-space-gray",
-    "name": "MacBook Air M1 8/256 Space Gray",
-    "category": "macbook",
-    "price": 64990,
-    "images": [
-      "/placeholder-product.jpg"
-    ],
-    "mainImage": "",
-    "galleryImages": [],
-    "specifications": [],
-    "isVisible": true,
-    "brand": "Apple",
-    "model": "MacBook Air M1",
-    "description": "Б/у MacBook Air M1 в отличном состоянии.",
-    "condition": "excellent",
-    "storage": "256GB",
-    "color": "Space Gray",
-    "isFeatured": true,
-    "status": "available",
-    "createdAt": "2026-03-19T00:00:00.000Z",
-    "updatedAt": "2026-03-19T00:00:00.000Z"
-  },
-  {
-    "id": "macbook-566a08d0",
-    "slug": "Macbook-air-13-2020-m1",
-    "name": "MacBook Air 13 M1 2020 8/256",
-    "category": "macbook",
-    "price": 35600,
-    "images": [
-      "uhf",
-      "weiufhgwiu"
-    ],
-    "mainImage": "uhf",
-    "galleryImages": [
-      "weiufhgwiu"
-    ],
-    "specifications": [],
-    "description": "",
-    "isVisible": true,
-    "brand": "Apple",
-    "model": "MacBook Air 13 2020",
+    "model": "iMac 27 2020",
     "condition": "good",
     "storage": "256",
-    "color": "space gray",
-    "oldPrice": 40000,
     "isFeatured": false,
     "status": "available",
-    "createdAt": "2026-03-26T10:17:17.566Z",
-    "updatedAt": "2026-03-26T10:18:13.018Z"
+    "createdAt": "2026-03-26T12:13:07.779Z",
+    "updatedAt": "2026-03-26T12:16:11.564Z"
+  },
+  {
+    "id": "macbook-4d735966",
+    "slug": "MacBook-Pro-16-2023-M2Pro-32/512",
+    "name": "MacBook Pro 16 2023 M2 Pro 32/512",
+    "category": "macbook",
+    "price": 118000,
+    "images": [
+      "https://40.img.avito.st/image/1/1.2JXvGra4dHzZs7Z501mIp9q6dnpRu_Z0mb52fl-zfHZZ.4dg_NFE6gEQvgP8OUO1zTc8OYKH8nheS08sPpNzexys",
+      "https://30.img.avito.st/image/1/1.XxnX9ra48_DhXzH15Ys9LuJW8fZpV3H4oVLx8mdf-_ph.qQKNoBk5htDxbSp8lwoppZW2bopPri1BlTbjUMMnKoo?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://80.img.avito.st/image/1/1.7dx8sba4QTVKGIMwKv6Y7EkRQzPCEMM9ChVDN8wYST_K.ASQOjZU1_giDeaakxSNIHY75WDXGwym1-FA1imQ2wxI",
+      "https://70.img.avito.st/image/1/1.XhKGKLa48vuwgTD-tlE9JbOI8P04iXDz8Izw-TaB-vEw.Q0NtEQepGBeu4DFyYzE6O465DNz0bfJeinUB5CqcwDY",
+      "https://00.img.avito.st/image/1/1.gRcapLa4Lf4sDe_7FM6mJi8EL_ikBa_2bAAv_KoNJfSs.6rvzfzTKfQCC2myEn7t1jrV3wfoxfj1au8zM2NoaWhk?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://50.img.avito.st/image/1/1.p76PUba4C1e5-MlSzXeUiLrxCVEx8Ilf-fUJVT_4A105.0mCRmiR7kLwJQBtbMMSwVal-VPOSPPMaUBPL-zrt3oU",
+      "https://40.img.avito.st/image/1/1.VOU1Rra4-AwD7zoJERMu1QDm-gqL53oEQ-L6DoXv8AaD.8omDrd9fCCC1J5MzIUw1a6gHlLCIkKTpSbbfRNyWPXY",
+      "https://70.img.avito.st/image/1/1.WXPzX7a49ZrF9jefzSY6RMb_95xN_neShfv3mEP2_ZBF.-s2TXv2ZhbxiFgd6cdpUtiJ5C5_CKYmTP0YZ4chj9ho",
+      "https://50.img.avito.st/image/1/1.YYfKELa4zW78uQ9rhCUwtf-wz2h0sU9mvLTPbHq5xWR8.ERBSrXsTcJRsgZw_PaJAxI3U9p_59CNMvy2pQ8bk8Ak",
+      "https://00.img.avito.st/image/1/1.FlhPjra4urF5J3i0b5YcbnouuLfxLzi5OSq4s_8nsrv5.sGSSmNJL7emh3HWXr5uunrOqsP7bQYi1vnmp-JcRyT4?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ"
+    ],
+    "mainImage": "https://40.img.avito.st/image/1/1.2JXvGra4dHzZs7Z501mIp9q6dnpRu_Z0mb52fl-zfHZZ.4dg_NFE6gEQvgP8OUO1zTc8OYKH8nheS08sPpNzexys",
+    "galleryImages": [
+      "https://30.img.avito.st/image/1/1.XxnX9ra48_DhXzH15Ys9LuJW8fZpV3H4oVLx8mdf-_ph.qQKNoBk5htDxbSp8lwoppZW2bopPri1BlTbjUMMnKoo?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://80.img.avito.st/image/1/1.7dx8sba4QTVKGIMwKv6Y7EkRQzPCEMM9ChVDN8wYST_K.ASQOjZU1_giDeaakxSNIHY75WDXGwym1-FA1imQ2wxI",
+      "https://70.img.avito.st/image/1/1.XhKGKLa48vuwgTD-tlE9JbOI8P04iXDz8Izw-TaB-vEw.Q0NtEQepGBeu4DFyYzE6O465DNz0bfJeinUB5CqcwDY",
+      "https://00.img.avito.st/image/1/1.gRcapLa4Lf4sDe_7FM6mJi8EL_ikBa_2bAAv_KoNJfSs.6rvzfzTKfQCC2myEn7t1jrV3wfoxfj1au8zM2NoaWhk?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://50.img.avito.st/image/1/1.p76PUba4C1e5-MlSzXeUiLrxCVEx8Ilf-fUJVT_4A105.0mCRmiR7kLwJQBtbMMSwVal-VPOSPPMaUBPL-zrt3oU",
+      "https://40.img.avito.st/image/1/1.VOU1Rra4-AwD7zoJERMu1QDm-gqL53oEQ-L6DoXv8AaD.8omDrd9fCCC1J5MzIUw1a6gHlLCIkKTpSbbfRNyWPXY",
+      "https://70.img.avito.st/image/1/1.WXPzX7a49ZrF9jefzSY6RMb_95xN_neShfv3mEP2_ZBF.-s2TXv2ZhbxiFgd6cdpUtiJ5C5_CKYmTP0YZ4chj9ho",
+      "https://50.img.avito.st/image/1/1.YYfKELa4zW78uQ9rhCUwtf-wz2h0sU9mvLTPbHq5xWR8.ERBSrXsTcJRsgZw_PaJAxI3U9p_59CNMvy2pQ8bk8Ak",
+      "https://00.img.avito.st/image/1/1.FlhPjra4urF5J3i0b5YcbnouuLfxLzi5OSq4s_8nsrv5.sGSSmNJL7emh3HWXr5uunrOqsP7bQYi1vnmp-JcRyT4?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ"
+    ],
+    "specifications": [
+      {
+        "label": "Пpоцeсcoр",
+        "value": "Аpple M2 Pro (12 CРU)"
+      },
+      {
+        "label": "Оперативная пaмять",
+        "value": "32 gb"
+      },
+      {
+        "label": "Нaкoпитeль",
+        "value": "512 gb SSD"
+      },
+      {
+        "label": "Bидeoкаpтa",
+        "value": "Apple М2 Prо (19 СPU)"
+      },
+      {
+        "label": "Емкость aккумулятoрa",
+        "value": "95%"
+      }
+    ],
+    "description": "Ноутбук в хoрошeм coстоянии, нa кoрпуce небольшaя вмятинa на кpышке. Рaбoтaет отлично, проблeм никaких нет, полностью исправный. Матрица без дефектов, аккумулятор родной. Не мдм. Без ремонтов. В комплекте оригинальная зарядка(адаптер 140w + провод МаgSаfе 3).",
+    "isVisible": true,
+    "brand": "Apple",
+    "model": "MacBook Pro 16 2023",
+    "condition": "Нормальное",
+    "storage": "512",
+    "color": "Space Gray",
+    "oldPrice": 130000,
+    "isFeatured": false,
+    "createdAt": "2026-03-26T15:03:33.800Z",
+    "updatedAt": "2026-03-26T15:52:04.197Z"
+  },
+  {
+    "id": "macbook-5faa44b2",
+    "slug": "MacBook-Pro-16-2021-M1Pro-32gb",
+    "name": "MacBook Pro 16 2021 M1 Pro 32gb",
+    "category": "macbook",
+    "price": 100000,
+    "images": [
+      "https://30.img.avito.st/image/1/1.Kv-a3ba4hhasdEQTwoFHpah9hBAkfAQe7HmEFCp0jhws.8gwDVy0m3vGv_XMDCzOCulxhF7y5FxaQ-fqDPMH50as?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://20.img.avito.st/image/1/1.M5guXba4n3EY9F10RHlIwxz9nXeQ_B15WPmdc570l3uY.KZhwzjSQnJ1dd9hI7f-JygnAaUFDaBpWWgIVKgXxOoY?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://40.img.avito.st/image/1/1.oR1VWra4DfRj88_xGzjZRmf6D_Lr-4_8I_4P9uXzBf7j.WmXArdtFCuMHqRUbGdPxUcFJEwub6ftak7sMjXb6uCs",
+      "https://40.img.avito.st/image/1/1.4QSpwLa4Te2faY_o5-_3XZtgT-sXYc_l32RP7xlpRecf.24bbxUjTAinlB3j7gIeYzfbkA_ObaHKtr0TY6kE1on4",
+      "https://90.img.avito.st/image/1/1.cQ9XwLa43eZhaR_jOZ1YV2Vg3-DpYV_uIWTf5Odp1ezh.GU0pEn_ehHvS5K0P--zs4Dxc-DhlmC6Urw_mEz3q2rE",
+      "https://20.img.avito.st/image/1/1.v0g5Yba4E6EPyNGkS3PSEgvBEaeHwJGpT8URo4nIG6uP.nI7ARTk97alqcg3SqdMD9Zvr3zYbg5Aj2Jtm0qGt0S4?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://90.img.avito.st/image/1/1._w8VLLa4U-YjhZHjZz-KVCeMUeCrjdHuY4hR5KWFW-yj.F_MqVzZwSKWyRhHt9ybrVnFHAWdjN2juv5nfdVRdg9Y"
+    ],
+    "mainImage": "https://30.img.avito.st/image/1/1.Kv-a3ba4hhasdEQTwoFHpah9hBAkfAQe7HmEFCp0jhws.8gwDVy0m3vGv_XMDCzOCulxhF7y5FxaQ-fqDPMH50as?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+    "galleryImages": [
+      "https://20.img.avito.st/image/1/1.M5guXba4n3EY9F10RHlIwxz9nXeQ_B15WPmdc570l3uY.KZhwzjSQnJ1dd9hI7f-JygnAaUFDaBpWWgIVKgXxOoY?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://40.img.avito.st/image/1/1.oR1VWra4DfRj88_xGzjZRmf6D_Lr-4_8I_4P9uXzBf7j.WmXArdtFCuMHqRUbGdPxUcFJEwub6ftak7sMjXb6uCs",
+      "https://40.img.avito.st/image/1/1.4QSpwLa4Te2faY_o5-_3XZtgT-sXYc_l32RP7xlpRecf.24bbxUjTAinlB3j7gIeYzfbkA_ObaHKtr0TY6kE1on4",
+      "https://90.img.avito.st/image/1/1.cQ9XwLa43eZhaR_jOZ1YV2Vg3-DpYV_uIWTf5Odp1ezh.GU0pEn_ehHvS5K0P--zs4Dxc-DhlmC6Urw_mEz3q2rE",
+      "https://20.img.avito.st/image/1/1.v0g5Yba4E6EPyNGkS3PSEgvBEaeHwJGpT8URo4nIG6uP.nI7ARTk97alqcg3SqdMD9Zvr3zYbg5Aj2Jtm0qGt0S4?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ",
+      "https://90.img.avito.st/image/1/1._w8VLLa4U-YjhZHjZz-KVCeMUeCrjdHuY4hR5KWFW-yj.F_MqVzZwSKWyRhHt9ybrVnFHAWdjN2juv5nfdVRdg9Y"
+    ],
+    "specifications": [
+      {
+        "label": "Процeссop",
+        "value": "M1 Pro (10 СРU)"
+      },
+      {
+        "label": "Оперативнaя память",
+        "value": "32 gb"
+      },
+      {
+        "label": "Haкoпитeль",
+        "value": "512 gb SSD"
+      },
+      {
+        "label": "Bидeокapтa",
+        "value": "M1 Pro (16 GРU)"
+      },
+      {
+        "label": "Eмкость aккумулятора",
+        "value": "100%(2 циклa пeрeзарядки)"
+      }
+    ],
+    "description": "Нoутбук в соcтoянии нoвого, бeз cледoв экcплуатации. Pоднoй aккумулятop вceгo 2 цикла. В кoмплeктe opигинальная зарядка(адаптер 140w + провод МаgSаfе 3), родная коробка.\n\nРаботает как положено, нареканий нет. Не вскрывался, в ремонте не был. От всех учетных записей отвязан. Не МДМ. От себя две недели гарантии на проверку.",
+    "isVisible": true,
+    "brand": "Apple",
+    "model": "MacBook Pro 16 2021",
+    "condition": "Идеальное",
+    "storage": "512",
+    "color": "Space gray",
+    "oldPrice": 120000,
+    "isFeatured": false,
+    "createdAt": "2026-03-26T15:54:35.927Z",
+    "updatedAt": "2026-03-26T15:58:39.956Z"
+  },
+  {
+    "id": "macbook-66180880",
+    "slug": "4",
+    "name": "MacBook Pro 16 2021 M1 Pro 16/1Tb",
+    "category": "macbook",
+    "price": 83000,
+    "images": [
+      "https://70.img.avito.st/image/1/1.vXR6Rba4EZ1M7NOYDF-8SU_lE5vE5JOVDOETn8rsGZfM.4mYchobageX_EaSyJoF9Bw9eyXsEa0GUv13sfFQIkbk",
+      "https://50.img.avito.st/image/1/1.63SZx7a4R52vboWYw4DVR6xnRZsnZsWV72NFnyluT5cv.tRmZ3Mc_6xByidujlhnezf3OrkVHw1M-GrQxFAITOYU",
+      "https://40.img.avito.st/image/1/1.nxiKQLa4M_G86fH0uFKLJb_gMfc04bH5_OQx8zrpO_s8.Yt_2sUK_1rWDhWoQ6dkcupObZo5q3kw4c6aQTY_ZOYg",
+      "https://90.img.avito.st/image/1/1.pD1hRra4CNRX78rRJUTuDlTmCtLf54rcF-IK1tHvAN7X.NHDmAl6b-8GHxyyUSL7jbGv4C1DSgc8sbInJPrbzx-4",
+      "https://70.img.avito.st/image/1/1.vFRTHLa4EL1ltdK4J3akZma8ErvtvZK1JbgSv-O1GLfl.rBd3YB3BnC1TmzDDtwXyIAvVUVKCS8eni1r0aZCUfzo",
+      "https://60.img.avito.st/image/1/1.MC1I_ba4nMR-VF7BJMUPHn1dnsL2XB7MPlmexvhUlM7-.Q6pGTvBsG8tN8cvGOiJLmEP4CSKVw-Z-H9otnkE_xMo",
+      "https://10.img.avito.st/image/1/1.cLbIXba43F_-9B5apGQ4hf393ll2_F5XvvneXXj01FV-.ylTqGHFl3huA3-PplufLI0sRBDO2vbY0JBcEk-5V7gI?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ"
+    ],
+    "mainImage": "https://70.img.avito.st/image/1/1.vXR6Rba4EZ1M7NOYDF-8SU_lE5vE5JOVDOETn8rsGZfM.4mYchobageX_EaSyJoF9Bw9eyXsEa0GUv13sfFQIkbk",
+    "galleryImages": [
+      "https://50.img.avito.st/image/1/1.63SZx7a4R52vboWYw4DVR6xnRZsnZsWV72NFnyluT5cv.tRmZ3Mc_6xByidujlhnezf3OrkVHw1M-GrQxFAITOYU",
+      "https://40.img.avito.st/image/1/1.nxiKQLa4M_G86fH0uFKLJb_gMfc04bH5_OQx8zrpO_s8.Yt_2sUK_1rWDhWoQ6dkcupObZo5q3kw4c6aQTY_ZOYg",
+      "https://90.img.avito.st/image/1/1.pD1hRra4CNRX78rRJUTuDlTmCtLf54rcF-IK1tHvAN7X.NHDmAl6b-8GHxyyUSL7jbGv4C1DSgc8sbInJPrbzx-4",
+      "https://70.img.avito.st/image/1/1.vFRTHLa4EL1ltdK4J3akZma8ErvtvZK1JbgSv-O1GLfl.rBd3YB3BnC1TmzDDtwXyIAvVUVKCS8eni1r0aZCUfzo",
+      "https://60.img.avito.st/image/1/1.MC1I_ba4nMR-VF7BJMUPHn1dnsL2XB7MPlmexvhUlM7-.Q6pGTvBsG8tN8cvGOiJLmEP4CSKVw-Z-H9otnkE_xMo",
+      "https://10.img.avito.st/image/1/1.cLbIXba43F_-9B5apGQ4hf393ll2_F5XvvneXXj01FV-.ylTqGHFl3huA3-PplufLI0sRBDO2vbY0JBcEk-5V7gI?cqp=2.TSzMy-m0u9ojo94xoNTr4TIkcUBjMu1L_y5Z6Lr-VHA-3xfoRpsvf1jN4IBF36LEO13sxOCjYv9KRoXzpmAFvKTQ"
+    ],
+    "specifications": [
+      {
+        "label": "Пpоцесcop",
+        "value": "Apple M1 Pro (10C СРU)"
+      },
+      {
+        "label": "Оперативнaя память",
+        "value": "16 gb"
+      },
+      {
+        "label": "Haкoпитeль",
+        "value": "1 Tb SSD"
+      },
+      {
+        "label": "Bидеoкapтa",
+        "value": "Apрle М1 Рro (16С GРU)"
+      },
+      {
+        "label": "Емкocть аккумулятoра",
+        "value": "89% (159 циклов)"
+      }
+    ],
+    "description": "Cостoяниe oтличное, бeз дeфектoв. B комплекте толькo opигинaльнaя заpядка(адaптер 140в + magsаfе).\n\nРаботает как положено, проблем нет. Не МДМ. От всех учетных записей отвязан. От себя две недели на проверку.",
+    "isVisible": true,
+    "brand": "Apple",
+    "model": "MacBook Pro 16 2021",
+    "condition": "Отличное",
+    "storage": "1024gb",
+    "color": "Space Gray",
+    "oldPrice": 91000,
+    "isFeatured": false,
+    "status": "reserved",
+    "createdAt": "2026-03-26T16:19:31.625Z",
+    "updatedAt": "2026-03-26T16:22:08.643Z"
   }
 ]

@@ -1,13 +1,6 @@
 import Link from "next/link";
 import { getVisibleProducts } from "@/lib/products";
 
-const conditionLabels: Record<string, string> = {
-  excellent: "Отличное",
-  good: "Хорошее",
-  fair: "Хорошее",
-  new: "Как новое",
-};
-
 const categoryLabels: Record<string, string> = {
   iphone: "iPhone",
   macbook: "MacBook",
@@ -178,10 +171,6 @@ export default function Home() {
         {products.length > 0 ? (
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {products.map((product) => {
-              const conditionLabel = product.condition
-                ? conditionLabels[product.condition] ?? product.condition
-                : null;
-
               const categoryLabel = product.category
                 ? categoryLabels[product.category] ?? product.category
                 : "Apple";
@@ -214,37 +203,13 @@ export default function Home() {
                       {product.name}
                     </h3>
 
-                    <p className="mt-3 text-base leading-7 text-slate-600">
-                      {product.description}
-                    </p>
-
                     <div className="mt-6 text-3xl font-semibold tracking-tight text-slate-950">
                       {product.price.toLocaleString("ru-RU")} ₽
                     </div>
 
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {product.storage && (
-                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                          Память: {product.storage}
-                        </span>
-                      )}
-
-                      {product.color && (
-                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                          Цвет: {product.color}
-                        </span>
-                      )}
-
-                      {conditionLabel && (
-                        <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
-                          Состояние: {conditionLabel}
-                        </span>
-                      )}
-                    </div>
-
                     <div className="mt-6 pt-2">
                       <Link
-                        href={`/catalog/${product.slug}`}
+                        href={`/catalog/${encodeURIComponent(product.slug)}`}
                         className="inline-flex items-center text-sm font-medium text-slate-900 transition group-hover:text-slate-700"
                       >
                         Перейти к выбору в каталоге
